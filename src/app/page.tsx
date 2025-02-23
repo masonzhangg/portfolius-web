@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import { Box, Button, TextField, Typography, Link } from "@mui/material";
+import { Box, Button, Typography, Link } from "@mui/material";
 import Image from "next/image";
-import { useRouter } from "next/router";
 
 export default function Home() {
   return (
@@ -91,6 +90,48 @@ export default function Home() {
           <br />
           Investing.
         </Typography>
+
+        {/* App Store and Google Play Logos */}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "10rem",
+          }}
+        >
+          {/* App Store Logo */}
+          <Box
+            sx={{
+              marginBottom: "1rem",
+            }}
+          >
+            <Link href="https://portfolius.ai/comingsoon" target="_blank">
+              <Image
+                src="/app-store.svg"
+                width={150}
+                height={50}
+                alt="App Store"
+              />
+            </Link>
+          </Box>
+          {/* Google Play Logo */}
+          <Box
+            sx={{
+              marginBottom: "1rem",
+            }}
+          >
+            <Link href="https://portfolius.ai/comingsoon" target="_blank">
+              <Image
+                src="/google-play.png"
+                width={150}
+                height={50}
+                alt="Google Play Store"
+              />
+            </Link>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
