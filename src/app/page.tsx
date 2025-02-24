@@ -126,7 +126,6 @@ export default function Home() {
       </Typography>
 
       {/* Scrolling Logos Section */}
-      {/* Scrolling Logos Section */}
       <Box
         sx={{
           position: "absolute",
