@@ -1,5 +1,5 @@
 "use client";
-import { Box, Button, Typography, Link } from "@mui/material";
+import { Box, Button, Typography, Link, Divider } from "@mui/material";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: "3750px",
+        height: "4000px",
         backgroundColor: "#1b1b1b",
         overflow: "auto",
       }}
@@ -199,6 +199,121 @@ export default function Home() {
           ))}
         </Box>
       </Box>
+
+      {/* "Demo" Section */}
+      <Box
+        sx={{
+          position: "absolute",
+          background: "#d9d9d9",
+          top: "65rem",
+          left: "10rem",
+          width: "30rem",
+          height: "19rem",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          display: "flex",
+          justifyContent: "center",
+          borderRadius: "1rem",
+        }}
+      >
+        Photo
+      </Box>
+
+      <Box
+        sx={{
+          position: "absolute",
+          background: "#d9d9d9",
+          top: "90rem",
+          right: "10rem",
+          width: "30rem",
+          height: "19rem",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          display: "flex",
+          justifyContent: "center",
+          borderRadius: "1rem",
+        }}
+      >
+        Video
+      </Box>
+
+      <Box
+        sx={{
+          position: "absolute",
+          background: "#d9d9d9",
+          top: "115rem",
+          left: "10rem",
+          width: "30rem",
+          height: "19rem",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          display: "flex",
+          justifyContent: "center",
+          borderRadius: "1rem",
+        }}
+      >
+        Photo
+      </Box>
+
+      {/* Divider */}
+      <Divider
+        sx={{
+          position: "absolute",
+          top: "145rem",
+          left: "calc(50% - 10rem)",
+          width: "20rem",
+          borderColor: "white",
+        }}
+      />
+
+      {/* "FAQ" Section */}
+      <Typography
+        variant="h2"
+        sx={{
+          position: "absolute",
+          top: "148rem",
+          left: "calc(50% - 3rem)",
+          fontFamily: "Inter",
+          color: "white",
+          fontSize: "3rem",
+          fontWeight: "300",
+          textAlign: "center",
+        }}
+      >
+        FAQ
+      </Typography>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Smooth Infinite Scrolling */}
       <style jsx>{`
