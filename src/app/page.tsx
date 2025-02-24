@@ -56,7 +56,7 @@ export default function Home() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "17.5rem",
+          marginTop: "12.5rem",
         }}
       >
         {/* Logo */}
@@ -113,7 +113,7 @@ export default function Home() {
         variant="h2"
         sx={{
           position: "absolute",
-          top: "50rem",
+          top: "42.5rem",
           fontFamily: "Inter",
           color: "white",
           fontSize: "1.5rem",
@@ -129,7 +129,7 @@ export default function Home() {
       <Box
         sx={{
           position: "absolute",
-          top: "54rem",
+          top: "47.5rem",
           width: "100%",
           overflow: "hidden",
           whiteSpace: "nowrap",
@@ -205,7 +205,7 @@ export default function Home() {
         sx={{
           position: "absolute",
           background: "#d9d9d9",
-          top: "65rem",
+          top: "62.5rem",
           left: "10rem",
           width: "30rem",
           height: "19rem",
@@ -223,7 +223,7 @@ export default function Home() {
         sx={{
           position: "absolute",
           background: "#d9d9d9",
-          top: "90rem",
+          top: "87.5rem",
           right: "10rem",
           width: "30rem",
           height: "19rem",
@@ -241,7 +241,7 @@ export default function Home() {
         sx={{
           position: "absolute",
           background: "#d9d9d9",
-          top: "115rem",
+          top: "112.5rem",
           left: "10rem",
           width: "30rem",
           height: "19rem",
@@ -259,7 +259,7 @@ export default function Home() {
       <Divider
         sx={{
           position: "absolute",
-          top: "145rem",
+          top: "142.5rem",
           left: "calc(50% - 10rem)",
           width: "20rem",
           borderColor: "white",
@@ -271,7 +271,7 @@ export default function Home() {
         variant="h2"
         sx={{
           position: "absolute",
-          top: "148rem",
+          top: "145.5rem",
           left: "calc(50% - 3rem)",
           fontFamily: "Inter",
           color: "white",
@@ -283,37 +283,79 @@ export default function Home() {
         FAQ
       </Typography>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      {/* Disclaimer Section */}
+      <Box
+        sx={{
+          position: "relative",
+          width: "100%",
+          color: "white",
+          textAlign: "justify",
+          fontSize: "0.875rem",
+          fontFamily: "Inter",
+          lineHeight: "1.6",
+          maxWidth: "90rem",
+          margin: "auto",
+          marginBottom: "5rem",
+        }}
+      >
+        <Typography variant="body2" sx={{ mx: "2rem", whiteSpace: "pre-line" }}>
+          <strong>Important Information</strong> <br />
+          The information provided on this website and the Portfolius app is for
+          informational and research purposes only. Portfolius Inc. is not an
+          investment adviser and does not provide investment advice. Portfolius
+          is an education tool designed to assist users in gathering and
+          analyzing financial information. The app does not generate or manage
+          investment advice. Users are solely responsible for their investment
+          decisions based on the information provided through the Portfolius
+          app.
+          <br />
+          <br />
+          <strong>Education and Investing Tool</strong> <br />
+          Portfolius is designed to provide users with financial data, market
+          research, and automated analysis tools. However, any information or
+          analysis presented through the Portfolius app should not be considered
+          as personalized investment advice or recommendations. Users should
+          conduct their own due diligence and consult with qualified financial
+          professionals before making any investment decisions.
+          <br />
+          <br />
+          <strong>Investment Risks</strong> <br />
+          Investing in securities involves significant risk, including the risk
+          of loss of principal. Past performance does not guarantee future
+          results, and there can be no assurance that any investment strategy or
+          security will meet its objectives or achieve any specific financial
+          outcome. You should only invest risk capital that you can afford to
+          lose without impacting your financial stability. Carefully consider
+          your individual financial situation, investment goals, and risk
+          tolerance before making any investment decisions.
+          <br />
+          <br />
+          <strong>Consult with Professionals</strong> <br />
+          You should consult with a qualified financial advisor, attorney, or
+          tax professional regarding your personal financial situation,
+          investment objectives, and any potential legal or tax implications
+          before making any investment decisions. Portfolius does not provide
+          legal, tax, or investment advice.
+          <br />
+          <br />
+          <strong>Limitation of Liability</strong> <br />
+          Portfolius, its affiliates, and employees disclaim any and all
+          liability for any losses or damages arising from actions taken or
+          reliance placed on the information provided on this website or through
+          the Portfolius app. This includes, but is not limited to, losses
+          related to the purchase or sale of securities or other financial
+          instruments, changes in market conditions, or any other investment
+          outcomes.
+          <br />
+          <br />
+          <strong>No Guarantees</strong> <br />
+          No representation is made that any investment strategy, security, or
+          financial product discussed on this website or through the Portfolius
+          app will be profitable or suitable for any particular individual. The
+          content provided is based on sources believed to be reliable but is
+          not guaranteed to be accurate, complete, or timely.
+        </Typography>
+      </Box>
 
       {/* Smooth Infinite Scrolling */}
       <style jsx>{`
