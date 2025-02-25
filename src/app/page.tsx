@@ -8,7 +8,7 @@ export default function Home() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: "4000px",
+        height: "3650px",
         backgroundColor: "#1b1b1b",
         overflow: "auto",
       }}
@@ -282,6 +282,60 @@ export default function Home() {
       >
         FAQ
       </Typography>
+
+      <Box 
+        sx={{
+          position: "absolute",
+          background: "#d9d9d9",
+          top: "152.5rem",
+          left: "7.5rem",
+          width: "75rem",
+          height: "4rem",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          display: "flex",
+          justifyContent: "center",
+          borderRadius: "1rem",
+        }}
+      >
+        Q1
+      </Box>
+
+      <Box 
+        sx={{
+          position: "absolute",
+          background: "#d9d9d9",
+          top: "162.5rem",
+          left: "7.5rem",
+          width: "75rem",
+          height: "4rem",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          display: "flex",
+          justifyContent: "center",
+          borderRadius: "1rem",
+        }}
+      >
+        Q2
+      </Box>
+
+      <Box 
+        sx={{
+          position: "absolute",
+          background: "#d9d9d9",
+          top: "172.5rem",
+          left: "7.5rem",
+          width: "75rem",
+          height: "4rem",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          display: "flex",
+          justifyContent: "center",
+          borderRadius: "1rem",
+        }}
+      >
+        Q3
+      </Box>
 
       {/* Disclaimer Section */}
       <Box
