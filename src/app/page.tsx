@@ -41,7 +41,7 @@ export default function Home() {
             color: "black",
             fontFamily: "Quicksand",
             width: "5.5rem",
-            borderRadius: "30px",
+            borderRadius: "32px",
             height: "3rem",
           }}
         >
