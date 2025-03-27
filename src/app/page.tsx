@@ -1,6 +1,7 @@
 "use client";
 import { Box, Button, Typography, Link, Divider } from "@mui/material";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
       </Typography>
 
       {/* Get App Button */}
-      <Link href="https://portfolius.ai/comingsoon" target="_blank">
+      <Link href="https://portfolius.co/comingsoon" target="_blank">
         <Button
           variant="contained"
           sx={{
@@ -86,7 +87,7 @@ export default function Home() {
         {/* App Store & Google Play Buttons */}
         <Box sx={{ marginTop: "2rem" }}>
           <Box sx={{ marginBottom: "1rem" }}>
-            <Link href="https://portfolius.ai/comingsoon" target="_blank">
+            <Link href="https://portfolius.co/comingsoon" target="_blank">
               <Image
                 src="/app-store.svg"
                 width={150}
@@ -96,7 +97,7 @@ export default function Home() {
             </Link>
           </Box>
           <Box>
-            <Link href="https://portfolius.ai/comingsoon" target="_blank">
+            <Link href="https://portfolius.co/comingsoon" target="_blank">
               <Image
                 src="/google-play.png"
                 width={150}
@@ -125,34 +126,24 @@ export default function Home() {
         Used By Those At:
       </Typography>
 
-      {/* Scrolling Logos Section */}
+      {/* Marquee Scrolling Logos */}
       <Box
         sx={{
           position: "absolute",
           top: "47.5rem",
           width: "100%",
           overflow: "hidden",
-          whiteSpace: "nowrap",
-          display: "flex",
-          justifyContent: "center",
         }}
       >
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            width: "200%",
-            animation: "scroll 30s linear infinite",
-          }}
-        >
-          {[...Array(10)].map((_, i) => (
+        <Marquee gradient={false} speed={40}>
+          {[...Array(2)].map((_, index) => (
             <Box
-              key={i}
+              key={index}
               sx={{
                 display: "flex",
                 alignItems: "center",
                 gap: "6rem",
-                flexShrink: 0,
+                marginRight: "6rem",
               }}
             >
               <Image
@@ -160,7 +151,6 @@ export default function Home() {
                 width={70}
                 height={40}
                 alt="Google Play"
-                style={{ marginLeft: "7rem" }}
               />
               <Image
                 src="/googlelogo.png"
@@ -197,7 +187,7 @@ export default function Home() {
               <Image src="/twitterlogo.png" width={60} height={40} alt="X" />
             </Box>
           ))}
-        </Box>
+        </Marquee>
       </Box>
 
       {/* "Demo" Section */}
@@ -283,7 +273,7 @@ export default function Home() {
         FAQ
       </Typography>
 
-      <Box 
+      <Box
         sx={{
           position: "absolute",
           background: "#d9d9d9",
@@ -301,7 +291,7 @@ export default function Home() {
         Q1
       </Box>
 
-      <Box 
+      <Box
         sx={{
           position: "absolute",
           background: "#d9d9d9",
@@ -319,7 +309,7 @@ export default function Home() {
         Q2
       </Box>
 
-      <Box 
+      <Box
         sx={{
           position: "absolute",
           background: "#d9d9d9",
