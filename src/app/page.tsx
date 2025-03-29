@@ -9,7 +9,7 @@ export default function Home() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: "3650px",
+        height: "3550px",
         backgroundColor: "#1b1b1b",
         overflow: "auto",
       }}
@@ -29,8 +29,8 @@ export default function Home() {
         Portfolius
       </Typography>
 
-      {/* Get App Button */}
-      <Link href="https://portfolius.co/comingsoon" target="_blank">
+      {/* Get App Button - https://portfolius.co/comingsoon */}
+      <Link href="https://tally.so/r/nWqloa" target="_blank">
         <Button
           variant="contained"
           sx={{
@@ -86,7 +86,7 @@ export default function Home() {
 
         {/* App Store & Google Play Buttons */}
         <Box sx={{ marginTop: "2rem" }}>
-          <Box sx={{ marginBottom: "1rem" }}>
+          {/* <Box sx={{ marginBottom: "1rem" }}>
             <Link href="https://portfolius.co/comingsoon" target="_blank">
               <Image
                 src="/app-store.svg"
@@ -105,6 +105,36 @@ export default function Home() {
                 alt="Google Play Store"
               />
             </Link>
+          </Box>  */}
+
+          <Box sx={{ marginBottom: "1rem" }}>
+            <Button
+              variant="contained"
+              href="https://tally.so/r/nWqloa"
+              target="_blank"
+              sx={{
+                textTransform: "none",
+                position: "absolute",
+                top: "32.5rem",
+                left: "calc(50% - 10rem)",
+                background: "linear-gradient(135deg, #f0f0f0, #d9d9d9)",
+                color: "black",
+                fontFamily: "Inter",
+                width: "20rem",
+                height: "5rem",
+                fontSize: "1.5rem",
+                borderRadius: "32px",
+                fontWeight: "600",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
+                transition: "all 0.3s ease-in-out",
+                "&:hover": {
+                  background: "linear-gradient(135deg, #ffffff, #e0e0e0)",
+                  boxShadow: "0px 6px 14px rgba(0, 0, 0, 0.2)",
+                },
+              }}
+            >
+              Join the Waitlist 🚀
+            </Button>
           </Box>
         </Box>
       </Box>
@@ -339,7 +369,7 @@ export default function Home() {
           lineHeight: "1.6",
           maxWidth: "90rem",
           margin: "auto",
-          marginBottom: "5rem",
+          marginBottom: "2rem",
         }}
       >
         <Typography variant="body2" sx={{ mx: "2rem", whiteSpace: "pre-line" }}>
