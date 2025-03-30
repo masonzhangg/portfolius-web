@@ -1,10 +1,9 @@
 "use client";
 
-import type { Metadata } from "next";
-import { Quicksand, Inter } from "next/font/google";
+import { Inter, Quicksand } from "next/font/google";
 import Script from "next/script";
+import { useEffect, useState } from "react";
 import "./globals.css";
-import { useAnalytics } from "../hooks/useAnalytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,12 +20,23 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID;
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  useAnalytics();
+  const [isAllowedDomain, setIsAllowedDomain] = useState(false);
+  
+  useEffect(() => {
+
+    const hostname = window.location.hostname;
+    setIsAllowedDomain(
+      hostname === "portfolius.co" || 
+      hostname === "www.portfolius.co" ||
+      hostname === "https://portfolius.co" ||
+      hostname === "https://www.portfolius.co"
+    );
+  }, []);
 
   return (
     <html lang="en">
       <head>
-        {GA_MEASUREMENT_ID && (
+        {GA_MEASUREMENT_ID && isAllowedDomain && (
           <>
             <Script
               strategy="afterInteractive"
@@ -40,9 +50,7 @@ export default function RootLayout({
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
-                  gtag('config', '${GA_MEASUREMENT_ID}', {
-                    page_path: window.location.pathname,
-                  });
+                  gtag('config', '${GA_MEASUREMENT_ID}');
                 `,
               }}
             />
