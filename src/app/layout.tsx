@@ -4,9 +4,6 @@ import { Inter, Quicksand } from "next/font/google";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 import "./globals.css";
-import { metadata } from "./metadata";
-
-export { metadata }
 
 const inter = Inter({
   subsets: ["latin"],
