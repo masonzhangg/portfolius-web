@@ -184,13 +184,13 @@ export default function Home() {
             fontSize: { xs: "1.1rem", sm: "1.3rem", md: "1.5rem" },
             fontWeight: "600",
             textAlign: "center",
-            mb: { xs: 3, md: 4 },
+            mb: { xs: 3, md: 6 },
           }}
         >
           Used By Those At:
         </Typography>
 
-        <Marquee gradient={false} speed={40}>
+        <Marquee gradient={false} speed={60}>
           {[...Array(2)].map((_, index) => (
             <Box
               key={index}
@@ -198,7 +198,7 @@ export default function Home() {
                 display: "flex",
                 alignItems: "center",
                 gap: { xs: "3rem", md: "5rem" },
-                marginRight: { xs: "3rem", md: "5rem" },
+                marginRight: { xs: "3rem", md: "3rem" },
               }}
             >
               <Box
@@ -334,6 +334,7 @@ export default function Home() {
 
       {/* Feature Sections */}
       <Container maxWidth="xl" sx={{ py: { xs: 4, md: 8 } }}>
+        {/* First Section */}
         <Box
           sx={{
             display: "flex",
@@ -345,23 +346,7 @@ export default function Home() {
         >
           <Box
             sx={{
-              background: "#d9d9d9",
-              width: { xs: "90%", sm: "80%", md: "45%" },
-              height: { xs: "200px", sm: "250px", md: "300px" },
-              borderRadius: "1rem",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              mb: { xs: 3, md: 0 },
-              order: { xs: 2, md: 1 },
-            }}
-          >
-            Photo
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "100%", md: "45%" },
-              order: { xs: 1, md: 2 },
+              width: { xs: "100%", sm: "80%", md: "45%" },
               mb: { xs: 3, md: 0 },
               px: 2,
             }}
@@ -373,6 +358,7 @@ export default function Home() {
                 fontSize: { xs: "1.5rem", md: "2rem" },
                 mb: 2,
                 fontFamily: "Inter",
+                textAlign: "center",
               }}
             >
               Learn Market Fundamentals
@@ -383,18 +369,40 @@ export default function Home() {
                 color: "white",
                 fontSize: { xs: "1rem", md: "1.1rem" },
                 fontFamily: "Inter",
+                textAlign: "center",
               }}
             >
               Master the basics of investing through our interactive learning
               modules and real-world market simulations.
             </Typography>
           </Box>
+          <Box
+            sx={{
+              background: "transparent",
+              width: { xs: "90%", sm: "80%", md: "45%" },
+              height: { xs: "200px", sm: "250px", md: "300px" },
+              borderRadius: "1rem",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              position: "relative",
+            }}
+          >
+            <Image
+              src="/frontpage/simulation.png"
+              fill
+              style={{ objectFit: "contain" }}
+              alt="Stock Simulation"
+              priority
+            />
+          </Box>
         </Box>
 
+        {/* Second Section */}
         <Box
           sx={{
             display: "flex",
-            flexDirection: { xs: "column", md: "row" },
+            flexDirection: { xs: "column", md: "row-reverse" },
             alignItems: "center",
             justifyContent: "space-between",
             mb: { xs: 4, md: 10 },
@@ -414,6 +422,7 @@ export default function Home() {
                 fontSize: { xs: "1.5rem", md: "2rem" },
                 mb: 2,
                 fontFamily: "Inter",
+                textAlign: "center",
               }}
             >
               Practice Risk-Free Trading
@@ -424,6 +433,7 @@ export default function Home() {
                 color: "white",
                 fontSize: { xs: "1rem", md: "1.1rem" },
                 fontFamily: "Inter",
+                textAlign: "center",
               }}
             >
               Build your investment confidence with our realistic market
@@ -432,20 +442,28 @@ export default function Home() {
           </Box>
           <Box
             sx={{
-              background: "#d9d9d9",
+              background: "transparent",
               width: { xs: "90%", sm: "80%", md: "45%" },
               height: { xs: "200px", sm: "250px", md: "300px" },
-              borderRadius: "1rem",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              mb: { xs: 3, md: 0 },
+              position: "relative",
+              borderRadius: "1rem",
             }}
           >
-            Video
+            <Image
+              src="/frontpage/market.gif"
+              fill
+              unoptimized
+              style={{ objectFit: "contain", borderRadius: "1rem" }}
+              alt="Stock Market"
+              priority
+            />
           </Box>
         </Box>
 
+        {/* Third Section */}
         <Box
           sx={{
             display: "flex",
@@ -456,23 +474,7 @@ export default function Home() {
         >
           <Box
             sx={{
-              background: "#d9d9d9",
-              width: { xs: "90%", sm: "80%", md: "45%" },
-              height: { xs: "200px", sm: "250px", md: "300px" },
-              borderRadius: "1rem",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              mb: { xs: 3, md: 0 },
-              order: { xs: 2, md: 1 },
-            }}
-          >
-            Photo
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "100%", md: "45%" },
-              order: { xs: 1, md: 2 },
+              width: { xs: "100%", sm: "80%", md: "45%" },
               mb: { xs: 3, md: 0 },
               px: 2,
             }}
@@ -484,6 +486,7 @@ export default function Home() {
                 fontSize: { xs: "1.5rem", md: "2rem" },
                 mb: 2,
                 fontFamily: "Inter",
+                textAlign: "center",
               }}
             >
               Master Portfolio Management
@@ -494,11 +497,32 @@ export default function Home() {
                 color: "white",
                 fontSize: { xs: "1rem", md: "1.1rem" },
                 fontFamily: "Inter",
+                textAlign: "center",
               }}
             >
               Learn advanced portfolio strategies and track your progress with
               detailed analytics and personalized feedback.
             </Typography>
+          </Box>
+          <Box
+            sx={{
+              background: "transparent",
+              width: { xs: "90%", sm: "80%", md: "45%" },
+              height: { xs: "200px", sm: "250px", md: "300px" },
+              borderRadius: "1rem",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              position: "relative",
+            }}
+          >
+            <Image
+              src="/frontpage/portfolio.png"
+              fill
+              style={{ objectFit: "contain" }}
+              alt="Example Portfolio"
+              priority
+            />
           </Box>
         </Box>
       </Container>
@@ -508,8 +532,11 @@ export default function Home() {
         <Divider sx={{ borderColor: "white" }} />
       </Container>
 
-      {/* FAQ Section */}
-      <Container maxWidth="lg" sx={{ py: { xs: 4, md: 6 }, overflow: "visible", height: "auto" }}> 
+      {/* FAQs Section */}
+      <Container
+        maxWidth="lg"
+        sx={{ py: { xs: 4, md: 6 }, overflow: "visible", height: "auto" }}
+      >
         <Typography
           variant="h2"
           sx={{
@@ -524,7 +551,15 @@ export default function Home() {
           Frequently Asked Questions
         </Typography>
 
-        <Box sx={{ width: "100%", overflow: "visible", height: "auto", display: "flex", flexDirection: "column" }}>
+        <Box
+          sx={{
+            width: "100%",
+            overflow: "visible",
+            height: "auto",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
           {faqs.map((faq, index) => (
             <Accordion
               key={index}
@@ -581,7 +616,6 @@ export default function Home() {
           ))}
         </Box>
       </Container>
-
 
       {/* Disclaimer Section */}
       <Container maxWidth="lg" sx={{ py: { xs: 4, md: 6 } }}>
