@@ -4,10 +4,10 @@ import RootLayout from "./components/root-layout";
 
 export const metadata: Metadata = {
   title: 'Portfolius',
-  description: 'Learn, Practice, Master Investing',
+  description: 'Simulate. Trade. Connect. Experience the market with friends.',
   openGraph: {
     title: 'Portfolius',
-    description: 'Learn, Practice, Master Investing',
+    description: 'Simulate. Trade. Connect. Experience the market with friends.',
     url: 'https://portfolius.co',
     siteName: 'Portfolius',
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Portfolius',
-    description: 'Learn, Practice, Master Investing',
+    description: 'Simulate. Trade. Connect. Experience the market with friends.',
     images: ['https://portfolius.co/portfolius.png'],
   },
 };

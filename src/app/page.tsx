@@ -25,12 +25,12 @@ export default function Home() {
     {
       question: "What is Portfolius?",
       answer:
-        "Portfolius is an educational platform designed to help you learn, practice, and master investing through interactive tools and resources.",
+        "Portfolius is a social trading simulation platform where you can practice investing with virtual money, track market trends, and see what your friends are trading.",
     },
     {
-      question: "Is Portfolius an investment adviser?",
+      question: "Is real money used on Portfolius?",
       answer:
-        "No, Portfolius is not an investment adviser. It's an educational tool designed to assist users in gathering and analyzing financial information.",
+        "No, all trades on Portfolius are made with simulated money. It’s a risk-free environment to learn, experiment, and compete with friends.",
     },
     {
       question: "When will the app be available?",
@@ -139,9 +139,9 @@ export default function Home() {
             lineHeight: 1.2,
           }}
         >
-          Learn, Practice, Master
+          Simulate. Trade. Connect.
           <br />
-          Investing.
+          Experience the market with friends.
         </Typography>
 
         <Box sx={{ width: "100%", mt: { xs: 4, md: 6 } }}>
@@ -489,7 +489,7 @@ export default function Home() {
                 textAlign: "center",
               }}
             >
-              Master Portfolio Management
+              Trade, Compete, and Grow Together
             </Typography>
             <Typography
               variant="body1"
@@ -500,8 +500,10 @@ export default function Home() {
                 textAlign: "center",
               }}
             >
-              Learn advanced portfolio strategies and track your progress with
-              detailed analytics and personalized feedback.
+              Follow your friends' trades, compete in leaderboards, and discuss
+              market trends in a fun, risk-free environment. Portfolius makes
+              investing social, interactive, and engaging—without real financial
+              risks.
             </Typography>
           </Box>
           <Box
@@ -517,10 +519,10 @@ export default function Home() {
             }}
           >
             <Image
-              src="/frontpage/portfolio.png"
+              src="/frontpage/social.png"
               fill
               style={{ objectFit: "contain" }}
-              alt="Example Portfolio"
+              alt="Example Social"
               priority
             />
           </Box>
@@ -632,60 +634,104 @@ export default function Home() {
           <Typography variant="body2" sx={{ whiteSpace: "pre-line" }}>
             <strong>Important Information</strong> <br />
             The information provided on this website and the Portfolius app is
-            for informational and research purposes only. Portfolius Inc. is not
-            an investment adviser and does not provide investment advice.
-            Portfolius is an education tool designed to assist users in
-            gathering and analyzing financial information. The app does not
-            generate or manage investment advice. Users are solely responsible
-            for their investment decisions based on the information provided
-            through the Portfolius app.
+            for informational, educational, and entertainment purposes only.
+            Portfolius Inc. is not a registered investment adviser,
+            broker-dealer, or financial services provider. The platform is a
+            **social trading simulation** designed to help users engage with
+            market trends, explore investment concepts, and share simulated
+            trades with friends. All transactions on Portfolius are conducted
+            using **virtual money** and do not involve real financial assets.
+            Users should not interpret any information, discussions, or shared
+            trades as professional financial advice or investment
+            recommendations.
             <br />
             <br />
-            <strong>Education and Investing Tool</strong> <br />
-            Portfolius is designed to provide users with financial data, market
-            research, and automated analysis tools. However, any information or
-            analysis presented through the Portfolius app should not be
-            considered as personalized investment advice or recommendations.
-            Users should conduct their own due diligence and consult with
-            qualified financial professionals before making any investment
-            decisions.
+            <strong>Social Trading and Simulation-Based Learning</strong> <br />
+            Portfolius is a **community-driven trading simulation platform**,
+            where users can track virtual stock market movements, engage in
+            simulated trading, and see how their friends navigate market
+            conditions. The platform enables users to follow, discuss, and
+            compare trading strategies in a **risk-free, virtual environment**.
+            While users may exchange insights, ideas, and strategies, all
+            interactions should be considered **educational and for
+            entertainment purposes only**.
             <br />
             <br />
-            <strong>Investment Risks</strong> <br />
-            Investing in securities involves significant risk, including the
-            risk of loss of principal. Past performance does not guarantee
-            future results, and there can be no assurance that any investment
-            strategy or security will meet its objectives or achieve any
-            specific financial outcome. You should only invest risk capital that
-            you can afford to lose without impacting your financial stability.
-            Carefully consider your individual financial situation, investment
-            goals, and risk tolerance before making any investment decisions.
+            **No real financial transactions take place on Portfolius.** Users
+            cannot deposit or withdraw real money, nor can they purchase actual
+            stocks or securities through the platform. Any trades, portfolio
+            performance, or rankings on Portfolius **do not reflect real-world
+            market conditions, brokerage fees, or actual investment
+            performance**.
             <br />
             <br />
-            <strong>Consult with Professionals</strong> <br />
-            You should consult with a qualified financial advisor, attorney, or
-            tax professional regarding your personal financial situation,
-            investment objectives, and any potential legal or tax implications
-            before making any investment decisions. Portfolius does not provide
-            legal, tax, or investment advice.
+            <strong>Investment Risks and Limitations</strong> <br />
+            Investing in real-world securities involves significant risk,
+            including the potential loss of capital. While Portfolius offers
+            simulated trading based on real market data, **past performance in
+            the simulation does not guarantee success in real-world investing**.
+            Users should not base any actual investment decisions on their
+            simulated trades, social insights, or leaderboard rankings.
+            <br />
+            <br />
+            The platform does not provide personalized financial guidance, and
+            users should conduct their own due diligence before making real
+            investments. Market conditions are **unpredictable and subject to
+            change**, and information available on Portfolius may not be up to
+            date, complete, or accurate at all times.
+            <br />
+            <br />
+            <strong>User-Generated Content and Social Interactions</strong>{" "}
+            <br />
+            Portfolius fosters a **social trading environment**, where users can
+            share simulated trades, strategies, and financial insights. However,
+            all opinions, discussions, and trade-sharing within the platform
+            reflect the perspectives of individual users and should not be
+            considered professional financial advice. Portfolius does not
+            verify, endorse, or take responsibility for the accuracy of any
+            user-generated content, including **trade strategies, market
+            predictions, stock picks, or investment opinions** shared within the
+            platform.
+            <br />
+            <br />
+            Users are encouraged to engage respectfully and critically evaluate
+            any insights or trade ideas posted by others. Portfolius reserves
+            the right to remove content that is misleading, harmful, or violates
+            community guidelines.
+            <br />
+            <br />
+            <strong>Consult with Financial Professionals</strong> <br />
+            If you are considering making real-world investments, you should
+            consult with a **licensed financial advisor, tax professional, or
+            legal expert**. Portfolius does not provide personalized investment
+            strategies, financial planning, or legal/tax advice. Decisions
+            regarding real-world investing should be made based on professional
+            guidance and thorough personal research.
             <br />
             <br />
             <strong>Limitation of Liability</strong> <br />
-            Portfolius, its affiliates, and employees disclaim any and all
-            liability for any losses or damages arising from actions taken or
-            reliance placed on the information provided on this website or
-            through the Portfolius app. This includes, but is not limited to,
-            losses related to the purchase or sale of securities or other
-            financial instruments, changes in market conditions, or any other
-            investment outcomes.
+            Portfolius, its affiliates, employees, and partners disclaim any and
+            all liability for losses or damages resulting from reliance on the
+            information provided through the platform. This includes, but is not
+            limited to, any losses related to simulated trades, investment
+            decisions influenced by social interactions, or changes in market
+            conditions. Portfolius does not guarantee the accuracy,
+            completeness, or timeliness of the data and insights shared within
+            the app.
             <br />
             <br />
-            <strong>No Guarantees</strong> <br />
-            No representation is made that any investment strategy, security, or
-            financial product discussed on this website or through the
-            Portfolius app will be profitable or suitable for any particular
-            individual. The content provided is based on sources believed to be
-            reliable but is not guaranteed to be accurate, complete, or timely.
+            <strong>No Guarantees of Success</strong> <br />
+            No representation is made that any trading strategy, simulated
+            portfolio, or shared investment insights within Portfolius will
+            yield successful outcomes in the real world. The stock market is
+            highly volatile, and investment success depends on numerous factors
+            beyond the scope of Portfolius’ educational and social platform.
+            <br />
+            <br />
+            By using Portfolius, you acknowledge and agree that the platform is
+            strictly for **simulated investing and educational engagement**.
+            Always make financial decisions based on independent research and
+            professional advice.
           </Typography>
         </Box>
       </Container>
